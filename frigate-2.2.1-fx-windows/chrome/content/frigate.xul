@@ -29,8 +29,7 @@
 
 
     <toolbarpalette id="BrowserToolbarPalette">
-        <toolbarbutton id="frigateMainMenu" type="menu" label="friGate" image="chrome://frigate2/content/im/38.png" tooltiptext="friGate">
-            <image id="frigate2StatusBarIcon" value="active" />
+        <toolbarbutton id="frigateMainMenu" type="menu" iconState="active" class="toolbarbutton-1 chromeclass-toolbar-additional" label="friGate" tooltiptext="friGate">
             <menupopup id="frigate2MainMenuGen" onpopupshowing="nl.drew.fg.interf.Menu()" onpopuphidden="nl.drew.fg.interf.MenuHide()" />
         </toolbarbutton>
     </toolbarpalette>

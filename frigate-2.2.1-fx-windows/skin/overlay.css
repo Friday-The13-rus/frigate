@@ -1,58 +1,52 @@
 #frigateMainMenu {
     list-style-image: url("chrome://frigate2/content/im/38.png");
 }
-toolbar[iconsize="small"] #frigateMainMenu {
-    list-style-image: url("chrome://frigate2/content/im/38.png");
-}
-#frigate2StatusBarIcon {
-    height: 16px;
-    width: 16px;
-}
-#frigate2StatusBarIcon[value='wait']
+
+#frigateMainMenu[iconState='wait']
 {
     list-style-image: url('chrome://frigate2/content/im/38w.png');
 }
-#frigate2StatusBarIcon[value='up']
+#frigateMainMenu[iconState='up']
 {
     list-style-image: url('chrome://frigate2/content/im/38up.png');
 }
-#frigate2StatusBarIcon[value='active']
+#frigateMainMenu[iconState='active']
 {
     list-style-image: url('chrome://frigate2/content/im/38.png');
 }
-#frigate2StatusBarIcon[value='activean']
+#frigateMainMenu[iconState='activean']
 {
     list-style-image: url('chrome://frigate2/content/im/38an.png');
 }
-#frigate2StatusBarIcon[value='inactive']
+#frigateMainMenu[iconState='inactive']
 {
     list-style-image: url('chrome://frigate2/content/im/38g.png');
 }
-#frigate2StatusBarIcon[value='p']
+#frigateMainMenu[iconState='p']
 {
     list-style-image: url('chrome://frigate2/content/im/38p.png');
 }
-#frigate2StatusBarIcon[value='pspdy']
+#frigateMainMenu[iconState='pspdy']
 {
     list-style-image: url('chrome://frigate2/content/im/38pspdy.png');
 }
-#frigate2StatusBarIcon[value='panspdy']
+#frigateMainMenu[iconState='panspdy']
 {
     list-style-image: url('chrome://frigate2/content/im/38panspdy.png');
 }
-#frigate2StatusBarIcon[value='l']
+#frigateMainMenu[iconState='l']
 {
     list-style-image: url('chrome://frigate2/content/im/38l.png');
 }
-#frigate2StatusBarIcon[value='lan']
+#frigateMainMenu[iconState='lan']
 {
     list-style-image: url('chrome://frigate2/content/im/38lan.png');
 }
-#frigate2StatusBarIcon[value='pan']
+#frigateMainMenu[iconState='pan']
 {
     list-style-image: url('chrome://frigate2/content/im/38pan.png');
 }
-#frigate2StatusBarIcon[value='e']
+#frigateMainMenu[iconState='e']
 {
     list-style-image: url('chrome://frigate2/content/im/38e.png');
 }

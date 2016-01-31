@@ -732,7 +732,7 @@ nl.drew.fg.interf = function () {
                             miProxylist.setAttribute("checked", false);
                         }
                         container.appendChild(miProxylist);
-
+						container.appendChild(document.createElementNS(XUL_NS, "menuseparator"));
                     }
                 }
             }
@@ -740,7 +740,6 @@ nl.drew.fg.interf = function () {
             if (toserver) {
                 var toserverLen = toserver.length;
                 if (toserverLen > 0) {
-                    container.appendChild(document.createElementNS(XUL_NS, "menuseparator"));
                     tempMenuIteam = document.createElementNS(XUL_NS, "menu");
                     tempMenuIteam.setAttribute("label", " " + nosendto + " " + toserverLen);
                     tempMenuIteam.setAttribute("tooltiptext", "");
@@ -759,9 +758,10 @@ nl.drew.fg.interf = function () {
                     tempMenuIteam.appendChild(tempMenuPopup);
 
                     container.appendChild(tempMenuIteam);
+					
+					container.appendChild(document.createElementNS(XUL_NS, "menuseparator"));
                 }
             }
-            container.appendChild(document.createElementNS(XUL_NS, "menuseparator"));
 
             if (nl.drew.fg.on) {
                 miOnOff.setAttribute("label", " " + strOff);
@@ -1046,13 +1046,13 @@ nl.drew.fg.interf = function () {
 
     interf.icoUpdate = function (url) {
 
-        var statusBarIco = document.getElementById("frigate2StatusBarIcon");
+        var statusBarIco = document.getElementById("frigateMainMenu");
 
         if (statusBarIco == null)
             return false;
 
         if (Object.keys(nl.drew.fg.proxyArr).length < 1) {
-            statusBarIco.setAttribute("value", "e");
+            statusBarIco.setAttribute("iconState", "e");
             return;
         }
         if (nl.drew.fg.on) {
@@ -1124,7 +1124,7 @@ nl.drew.fg.interf = function () {
             style = "inactive";
         }
 
-        statusBarIco.setAttribute("value", style);
+        statusBarIco.setAttribute("iconState", style);
 
         return true;
     };
