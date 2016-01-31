@@ -1,0 +1,20 @@
+﻿<!ENTITY frigate2.Name "friGate - разблокировка сайтов">
+        <!ENTITY frigate2.Proxys "Прокси">
+        <!ENTITY frigate2.Proxys.Pers "Управление прокси-серверами">
+        <!ENTITY frigate2.Proxys.Add "добавить">
+        <!ENTITY frigate2.Proxys.Del "удалить">
+        <!ENTITY frigate2.Close "закрыть">
+        <!ENTITY frigate2.Main "Основное">
+        <!ENTITY frigate2.Behavior "Поведение">
+        <!ENTITY frigate2.Behavior.Updatetab "обновлять вкладки при изменении настроек прокси">
+        <!ENTITY frigate2.Behavior.Updatemanytab "не обновлять если вкладок много (>3)">
+        <!ENTITY frigate2.View "Вид">
+        <!ENTITY frigate2.View.Ico "Кнопка расширения:">
+        <!ENTITY frigate2.View.Top "на панели навигации">
+        <!ENTITY frigate2.View.Bottom "на панели расширений">
+        <!ENTITY frigate2.View.Disable "скрыть иконку">
+        <!ENTITY frigate2.Rec.Disable "отключить рекламу (требуется перезапуск)">
+        <!ENTITY frigate2.Authentication "Аутентификация">
+
+        <!ENTITY frigate2.Authentication.ClStore "сбросить локальное хранилище">
+        <!ENTITY frigate2.Authentication.ClUid "сбросить UID">

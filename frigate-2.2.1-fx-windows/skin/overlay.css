@@ -1,0 +1,73 @@
+#frigateMainMenu {
+    list-style-image: url("chrome://frigate2/content/im/38.png");
+}
+toolbar[iconsize="small"] #frigateMainMenu {
+    list-style-image: url("chrome://frigate2/content/im/38.png");
+}
+#frigate2StatusBarIcon {
+    height: 16px;
+    width: 16px;
+}
+#frigate2StatusBarIcon[value='wait']
+{
+    list-style-image: url('chrome://frigate2/content/im/38w.png');
+}
+#frigate2StatusBarIcon[value='up']
+{
+    list-style-image: url('chrome://frigate2/content/im/38up.png');
+}
+#frigate2StatusBarIcon[value='active']
+{
+    list-style-image: url('chrome://frigate2/content/im/38.png');
+}
+#frigate2StatusBarIcon[value='activean']
+{
+    list-style-image: url('chrome://frigate2/content/im/38an.png');
+}
+#frigate2StatusBarIcon[value='inactive']
+{
+    list-style-image: url('chrome://frigate2/content/im/38g.png');
+}
+#frigate2StatusBarIcon[value='p']
+{
+    list-style-image: url('chrome://frigate2/content/im/38p.png');
+}
+#frigate2StatusBarIcon[value='pspdy']
+{
+    list-style-image: url('chrome://frigate2/content/im/38pspdy.png');
+}
+#frigate2StatusBarIcon[value='panspdy']
+{
+    list-style-image: url('chrome://frigate2/content/im/38panspdy.png');
+}
+#frigate2StatusBarIcon[value='l']
+{
+    list-style-image: url('chrome://frigate2/content/im/38l.png');
+}
+#frigate2StatusBarIcon[value='lan']
+{
+    list-style-image: url('chrome://frigate2/content/im/38lan.png');
+}
+#frigate2StatusBarIcon[value='pan']
+{
+    list-style-image: url('chrome://frigate2/content/im/38pan.png');
+}
+#frigate2StatusBarIcon[value='e']
+{
+    list-style-image: url('chrome://frigate2/content/im/38e.png');
+}
+.fgCaption {
+    font-weight: bold;
+}
+.fgCaption2 {
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+}
+.fgCen {
+    text-align: center;
+}
+.notif { 
+    -moz-appearance:none !important;
+    background-color:#FFCC66 !important;
+}

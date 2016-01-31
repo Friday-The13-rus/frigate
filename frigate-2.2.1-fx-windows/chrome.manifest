@@ -1,0 +1,7 @@
+content frigate2             chrome/content/
+skin    frigate2    classic/2.0     skin/
+style       chrome://global/content/customizeToolbar.xul      chrome://frigate2/skin/overlay.css
+overlay     chrome://browser/content/browser.xul        chrome://frigate2/content/frigate.xul
+
+locale  frigate2 en-US       locale/en-US/
+locale  frigate2 ru-RU       locale/ru-RU/

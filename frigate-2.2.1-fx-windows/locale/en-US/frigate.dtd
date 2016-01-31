@@ -1,0 +1,20 @@
+        <!ENTITY frigate2.Name "friGate - unlock sites">
+        <!ENTITY frigate2.Proxys "Proxys">
+        <!ENTITY frigate2.Proxys.Pers "Control proxies">
+        <!ENTITY frigate2.Proxys.Add "add">
+        <!ENTITY frigate2.Proxys.Del "del">
+        <!ENTITY frigate2.Close "close">
+        <!ENTITY frigate2.Main "Main">
+        <!ENTITY frigate2.Behavior "Behavior">
+        <!ENTITY frigate2.Behavior.Updatetab "update tab when changing proxy settings">
+        <!ENTITY frigate2.Behavior.Updatemanytab "do not update if many tabs (>3)">
+        <!ENTITY frigate2.View "View">
+        <!ENTITY frigate2.View.Ico "Extension button:">
+        <!ENTITY frigate2.View.Top "on navigation bar">
+        <!ENTITY frigate2.View.Bottom "on extension bar">
+        <!ENTITY frigate2.View.Disable "hidden icon">
+        <!ENTITY frigate2.Rec.Disable "disable ads (restart required)">
+        <!ENTITY frigate2.Authentication "Authentication">
+
+        <!ENTITY frigate2.Authentication.ClStore "reset local storage">
+        <!ENTITY frigate2.Authentication.ClUid "reset UID">

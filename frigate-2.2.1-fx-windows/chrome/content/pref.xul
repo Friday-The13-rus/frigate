@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/preferences.css"?>
+<?xml-stylesheet href="chrome://frigate2/skin/overlay.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://frigate2/locale/frigate.dtd">
+
+<prefwindow id="frigate2PrefWindow" title="&frigate2.Name;"
+            xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/x-javascript" src="chrome://frigate2/content/pref_dialog.js"/>
+    <script type="application/x-javascript" src="chrome://frigate2/content/nsUserSettings.js"/>
+    <script type="application/x-javascript" src="chrome://frigate2/content/libs.js"/>
+    <script type="application/x-javascript" src="chrome://frigate2/content/storage.js"/>
+    <script type="application/x-javascript" src="chrome://frigate2/content/pref.js"/>
+    <prefpane id="frigate2PrefPane">
+        <preferences>
+            <preference id="frigate2_pref_updatetab" name="extensions.frigate2.updatetab" type="bool"/>
+            <preference id="frigate2_pref_updatemanytab" name="extensions.frigate2.updatemanytab" type="bool"/>
+            <!--preference id="frigate2_pref_ownproxy" name="extensions.frigate2.ownproxy" type="bool"/-->
+            <preference id="frigate2_pref_cluidbutton" name="extensions.frigate2.cluidbutton" type="bool"/>
+            <preference id="frigate2_pref_uid" name="extensions.frigate2.uid" type="string"/>
+            <preference id="frigate2_pref_debug" name="extensions.frigate2.debug" type="bool"/>
+            <preference id="frigate2_pref_hideico" name="extensions.frigate2.hideico" type="bool"/>
+            <preference id="frigate2_pref_recoff" name="extensions.frigate2.recOfff" type="bool"/>
+        </preferences>
+        <tabbox id="frigate2PreferenceTabbox">
+            <tabs>
+                <tab label="&frigate2.Main;"/>
+                <tab label="&frigate2.Proxys;"/>
+                <tab label="&frigate2.Authentication;"/>
+            </tabs>
+            <tabpanels>
+                <tabpanel id="frigate2View">
+                    <vbox flex="2">
+                        <groupbox>
+                            <caption class="fgCaption" label="&frigate2.View;"/>
+
+                            <checkbox label="&frigate2.View.Disable;"
+                                      preference="frigate2_pref_hideico" id="frigate2_hideico"/>
+                            <checkbox label="debug on"
+                                      preference="frigate2_pref_debug" id="frigate2_debug"/>
+                            <checkbox label="&frigate2.Rec.Disable;"
+                                      preference="frigate2_pref_recoff" id="frigate2_recoff"/>
+                        </groupbox>
+                        <groupbox>
+                            <caption class="fgCaption" label="&frigate2.Behavior;"/>
+
+                            <checkbox label="&frigate2.Behavior.Updatetab;"
+                                      preference="frigate2_pref_updatetab" id="frigate2_updatetab"/>
+                            <checkbox label="&frigate2.Behavior.Updatemanytab;"
+                                      preference="frigate2_pref_updatemanytab" id="frigate2_updatemanytab"/>
+                        </groupbox>
+                    </vbox>
+                </tabpanel>
+                <tabpanel id="frigate2Proxys">
+                    <vbox flex="1">
+                        <groupbox>
+                            <caption class="fgCaption" label="&frigate2.Proxys.Pers;"/>
+                            <!--checkbox class="fgCaption2" label="&frigate2.Proxys.Pers;"
+                                      preference="frigate2_pref_ownproxy" id="frigate2_ownproxy"/-->
+                            <listbox id="frigate2ProxyList" height="100" onselect="nl.drew.fg.pref.onSelProxy()">
+                                <listitem class="listitem-iconic" label="friGate proxys" value="friGate proxys"/>
+                            </listbox>
+                            <hbox>
+                                <menulist id="fg2_proxy_type">
+                                    <menupopup>
+                                        <menuitem label="HTTP" value="HTTP    " selected="true"/>
+                                        <menuitem label="SOCKS4" value="SOCKS4"/>
+                                        <menuitem label="SOCKS5" value="SOCKS5"/>
+                                    </menupopup>
+                                </menulist>
+                                <textbox id="frigate2_add_proxy" flex="1" multiline="false"
+                                         maxLength="128"/>
+                            </hbox>
+                            <hbox>
+                                <spacer flex="1"/>
+                                <button id="fg2_but_add_proxy" label="&frigate2.Proxys.Add;"
+                                        oncommand="nl.drew.fg.pref.addProxy()"/>
+                                <button id="fg2_but_del_proxy" label="&frigate2.Proxys.Del;"
+                                        oncommand="nl.drew.fg.pref.delProxy()"/>
+                                <!--button id="fg2_but_close_proxy" label="&frigate2.Close;"
+                                        oncommand="nl.drew.fg.pref.cl()"/-->
+                            </hbox>
+                        </groupbox>
+                    </vbox>
+                </tabpanel>
+                <tabpanel id="frigate2Authentication">
+                    <vbox flex="2">
+                        <groupbox>
+                            <caption class="fgCaption" label="UID"/>
+                            <textbox class="fgCen" id="frigate2_uid" preference="frigate2_pref_uid" readonly="true"
+                                     multiline="false"
+                                     maxLength="36" size="55"/>
+                        </groupbox>
+                        <hbox style="text-align:right;">
+                            <button id="fg2_but_clUidButton" flex="2" label="&frigate2.Authentication.ClUid;"
+                                    oncommand="nl.drew.fg.pref.clUidButton()"/>
+                        </hbox>
+                    </vbox>
+                </tabpanel>
+            </tabpanels>
+        </tabbox>
+    </prefpane>
+</prefwindow>
