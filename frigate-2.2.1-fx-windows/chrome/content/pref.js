@@ -298,7 +298,6 @@ nl.drew.fg.pref = function () {
 
 //==============================================================================
     pref.buttonHide = function () {
-
         var bar = document.getElementById("nav-bar");
         if (bar) {
             var curSet = bar.currentSet.split(",");
@@ -319,22 +318,22 @@ nl.drew.fg.pref = function () {
     }
 //==============================================================================
     pref.buttonShow = function () {
-        var bar = document.getElementById("nav-bar");
-        if (bar) {
-            var curSet = bar.currentSet.split(",");
-            var index = curSet.indexOf("frigateMainMenu");
-            if (index == -1) {
-                curSet.push("frigateMainMenu");
-            }
-            bar.setAttribute("currentset", curSet.join(","));
-            bar.currentSet = curSet.join(",");
-            document.persist(bar.id, "currentset");
-            try {
-                BrowserToolboxCustomizeDone(true);
-            }
-            catch (e) {
-            }
-        }
+        // var bar = document.getElementById("nav-bar");
+        // if (bar) {
+            // var curSet = bar.currentSet.split(",");
+            // var index = curSet.indexOf("frigateMainMenu");
+            // if (index == -1) {
+                // curSet.push("frigateMainMenu");
+            // }
+            // bar.setAttribute("currentset", curSet.join(","));
+            // bar.currentSet = curSet.join(",");
+            // document.persist(bar.id, "currentset");
+            // try {
+                // BrowserToolboxCustomizeDone(true);
+            // }
+            // catch (e) {
+            // }
+        // }
     }
 
 
